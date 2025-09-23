@@ -32,7 +32,7 @@ df.to_csv('../data_clean/raw_clean_data.csv',index=False)
 # Compute summary table and write it to disk
 summary = df.describe(exclude=np.int8).loc[["mean", "50%", "std"]]
 summary.rename(index={"50%": "median"}, inplace=True)
-#summary.to_markdown("../reports/findings.md")
+summary.to_markdown("../reports/findings.md")
 
 
 # Print(raw_yield_data.head(10))
@@ -41,7 +41,7 @@ print(df.head(10))
 
 
 print(summary)
-#print(df.to_markdown())
+#print(summary.to_markdown())
 #print (raw_yield_data.dtypes)
 #print (df.dtypes)
 

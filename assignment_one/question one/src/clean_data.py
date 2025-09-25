@@ -1,14 +1,11 @@
 import pandas as pd
 
-
-
 pd.options.display.max_columns = None
 pd.options.display.expand_frame_repr =False
 
 # Read in the raw data using pandas
 
 raw_yield_data = pd.read_csv('../data_raw/raw_yield_data.csv')
-
 
 # Unit standardization
 df=raw_yield_data.assign(
@@ -28,7 +25,6 @@ df = pd.get_dummies(df, columns=["Age Group"], prefix="AgeGroup", dtype="int8")
 
 # Write clean dataframe to disk
 df.to_csv('../data_clean/clean_yield_data.csv',index=False)
-
 
 print(df.head(10))
 

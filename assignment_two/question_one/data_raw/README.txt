@@ -2,7 +2,7 @@ This dataset contains various details and attributes associated with used cars.
  • NAME is a string describe make and model of the car
  • Location is a string describe location or city of sale
  • YEAR is an integer describe year of manufacture
- • Kilometers_Driven is an integer describe
+ • Kilometers_Driven is an integer
  • Fuel_Type is a string describe type of car fuel and have two values [Petrol, Diesel]
  • Transmission is a string describe car transmission type and have two values [Manual, Automatic]
  • Owner_Type is a string describe number of owners and have 4 types [First, Second, Third, Fourth & Above]
